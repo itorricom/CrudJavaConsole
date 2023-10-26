@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) { //Funcion principal
         menu();
-        conectar();
+        //conectar();
     }
 
     public static void menu() { //Menu
@@ -41,7 +41,17 @@ public class Main {
         }
     }
 
-    public static Connection conectar() {
+    /*void listarPersona(){
+        String sql = "select * from persona";
+        try{
+            //Connection conexion = null;
+            con =  conexion.createStatement();
+            st = con.createst
+        }
+    }*/
+
+
+   /* public static Connection conectar() {  //metodo conexion DB
         String dbURL = "jdbc:mysql://127.0.0.1:3306/dbprueba";
         String user = "root";
         String password = "";
@@ -50,14 +60,12 @@ public class Main {
         try {
             con = DriverManager.getConnection(dbURL, user, password);
             if (con != null) {
-                System.out.println("--------------");
-                System.out.println("* Conectado *");
-                System.out.println("--------------");
+                System.out.println("La conexion se ha realizado con exito :)");
             }
         } catch (SQLException error) {
             System.out.println("Error: "
                     + error.getErrorCode() + " " + error.getMessage());
         }
         return con;
-    }
+    }*/
 }
